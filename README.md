@@ -1,23 +1,70 @@
-# Student Attendance Counter (OOP Project)
+# Attendance Counter
 
-This project is a complete attendance tracking solution for college students. It includes a modern web-based preview and a professional Java Swing desktop implementation.
+A modern web-based attendance tracking application for college students. Track your attendance percentage, calculate how many classes you can skip, and manage your subjects efficiently.
 
-## Project Structure (Java)
+## Features
 
-The Java implementation is located in the `/java_project` directory and follows these OOP principles:
+- 📊 Real-time attendance percentage calculation
+- 📅 Subject-wise attendance tracking
+- 🎯 Target percentage goal setting
+- 📈 Skip day calculations
+- 💾 Local data persistence
+- 📱 Responsive design
 
-- **Encapsulation:** All data models (Student, Subject, Attendance) use private fields with proper getters and setters.
-- **Inheritance & Abstraction:** Uses an `AbstractPage` and `BaseManager` to reduce redundancy.
-- **Interfaces:** Defines a `StorageProvider` interface for file-based saving/loading.
-- **Polymorphism:** UI components are handled through common interfaces.
+## Live Demo
 
-## Setup Instructions
+The application is deployed at: [https://yourusername.github.io/attendance-counter](https://yourusername.github.io/attendance-counter)
 
-### Web Version (Live Preview)
-The live preview is running automatically. You can interact with the tabs (Timetable, Subjects, Attendance) and test the logic.
+## Development
 
-### Java Desktop Version
-1. Copy the contents of the `/java_project` folder to your local machine.
-2. Open the folder in any Java IDE (IntelliJ IDEA, Eclipse, or NetBeans).
-3. Ensure you have JDK 17 or higher installed.
-4. Run `Main.java` to start the desktop application.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+```bash
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Deploy to GitHub Pages
+```bash
+npm run deploy
+```
+
+## Deployment Instructions
+
+1. Create a new repository on GitHub named `attendance-counter`
+2. Update the `homepage` field in `package.json` with your GitHub username:
+   ```json
+   "homepage": "https://YOUR_USERNAME.github.io/attendance-counter"
+   ```
+3. Push this code to your GitHub repository
+4. Run `npm run deploy` to deploy to GitHub Pages
+5. Enable GitHub Pages in your repository settings (source: gh-pages branch)
+
+## Project Structure
+
+- `src/App.tsx` - Main application component
+- `src/types.ts` - TypeScript type definitions
+- `src/index.css` - Global styles and Tailwind CSS
+- `java_project/` - Java Swing desktop version (separate implementation)
+
+## Technologies Used
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React (icons)
+- Motion (animations)
