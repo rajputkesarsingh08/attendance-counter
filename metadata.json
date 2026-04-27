@@ -1,0 +1,6 @@
+{
+  "name": "Attendance Counter for College Students",
+  "description": "An OOP-based attendance tracker that helps students manage their 'academic balance' and predict skip days.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
