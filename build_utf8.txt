@@ -1,0 +1,47 @@
+﻿
+> react-example@0.0.0 build
+> vite build
+
+[36mvite v6.4.1 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 2087 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.41 kB[22m[1m[22m[2m Γöé gzip:   0.28 kB[22m
+[2mdist/[22m[35massets/index-DCB-x7Gp.css  [39m[1m[2m 24.09 kB[22m[1m[22m[2m Γöé gzip:   5.06 kB[22m
+[2mdist/[22m[36massets/index-DLMk3miF.js   [39m[1m[33m658.28 kB[39m[22m[2m Γöé gzip: 174.09 kB[22m
+node.exe : [33m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ([33m:String) []   
+ , RemoteException
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+(!) Some chunks are 
+larger than 500 kB 
+after minification. 
+Consider:
+- Using dynamic 
+import() to code-split 
+the application
+- Use build.rollupOption
+s.output.manualChunks 
+to improve chunking: htt
+ps://rollupjs.org/config
+uration-options/#output-
+manualchunks
+- Adjust chunk size 
+limit for this warning 
+via build.chunkSizeWarni
+ngLimit.[39m
+[32mΓ£ô built in 5.92s[39m

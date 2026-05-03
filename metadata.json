@@ -1,0 +1,5 @@
+{
+  "name": "Student Attendance & Timetable Helper",
+  "description": "A minimalist app for students to manage their timetable, prioritize subjects, and calculate how many days they can skip while maintaining required attendance.",
+  "requestFramePermissions": []
+}

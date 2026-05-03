@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div>
+                <p class="eyebrow">Student Dashboard</p>
+                <h1>Smart Attendance Analyzer</h1>
+                <p class="sidebar-copy">Track every subject, spot attendance risk early, and know exactly how many lectures you can miss or need to attend.</p>
+            </div>
+            <div class="date-card">
+                <p class="card-label">Today</p>
+                <h2 id="currentDate">Loading...</h2>
+                <p id="attendanceStatus" class="status-pill">Checking attendance...</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero-grid">
+                <div class="summary-card">
+                    <p class="card-label">Overall Attendance</p>
+                    <h2 id="overallAttendance">0%</h2>
+                    <p id="summaryMessage">Your overall summary will appear here.</p>
+                </div>
+                <div class="summary-card">
+                    <p class="card-label">Subjects Below 75%</p>
+                    <h2 id="lowAttendanceCount">0</h2>
+                    <p>Highlighted instantly so you know where to focus.</p>
+                </div>
+                <div class="summary-card">
+                    <p class="card-label">High Priority Subjects</p>
+                    <h2 id="highPriorityCount">0</h2>
+                    <p>Keep the most important classes visible at a glance.</p>
+                </div>
+            </section>
+
+            <section class="dashboard-grid">
+                <section class="panel timetable-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Timetable</p>
+                            <h3>Dynamic Academic Months</h3>
+                        </div>
+                    </div>
+                    <div id="monthsContainer" class="month-grid"></div>
+                    <div class="timetable-note">
+                        <strong>Auto-generated:</strong> Months always start from January and stop at your current system month.
+                    </div>
+                </section>
+
+                <section class="panel subject-form-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Subjects</p>
+                            <h3>Add a New Subject</h3>
+                        </div>
+                    </div>
+
+                    <form id="subjectForm" class="subject-form">
+                        <label>
+                            Subject Name
+                            <input type="text" id="subjectName" placeholder="Enter subject name" required>
+                        </label>
+
+                        <label>
+                            Total Lectures
+                            <input type="number" id="totalLectures" min="1" placeholder="e.g. 40" required>
+                        </label>
+
+                        <label>
+                            Attended Lectures
+                            <input type="number" id="attendedLectures" min="0" placeholder="e.g. 30" required>
+                        </label>
+
+                        <div>
+                            <span class="input-label">Priority</span>
+                            <div class="priority-buttons">
+                                <button type="button" class="priority-btn" data-priority="LOW">Low</button>
+                                <button type="button" class="priority-btn" data-priority="MEDIUM">Medium</button>
+                                <button type="button" class="priority-btn" data-priority="HIGH">High</button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="primary-btn">Add Subject</button>
+                    </form>
+                </section>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">Attendance</p>
+                        <h3>Subject Analytics</h3>
+                    </div>
+                </div>
+                <div id="messageBox" class="message-box hidden"></div>
+                <div id="subjectCards" class="subject-cards"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
